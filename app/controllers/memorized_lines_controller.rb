@@ -1,0 +1,2 @@
+class MemorizedLinesController < ApplicationController
+end
