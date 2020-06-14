@@ -1,0 +1,11 @@
+<h1>ALL OUR SONGS 🎶</h1>
+
+
+<div>
+<%@songs.each do |song|%>
+
+<h3><%= song.artist%> | <%=link_to song.title, lyric_path(song.id)%></h3>
+
+<%end%>
+
+</div>
