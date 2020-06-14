@@ -1,0 +1,12 @@
+<h1> user show </h1>
+
+<p> username: <%= @user.username %> </p>
+
+<h2> Memorized Lines </h2>
+<% @user.memorized_lines.each do |memorized_line| %>
+<%= memorized_line.lyric.lines_of_lyrics %>
+<% end %>
+
+<%= button_to "Edit User", edit_user_path, method: :get %>
+<%= button_to "Destory User", user_path, method: :delete %>
+<%= link_to "Destroy User", user_path %>
