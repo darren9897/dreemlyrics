@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :structures
   resources :songs
   resources :memorized_lines
   resources :lyrics

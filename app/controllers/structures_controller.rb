@@ -1,2 +1,0 @@
-class StructuresController < ApplicationController
-end
