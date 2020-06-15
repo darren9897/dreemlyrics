@@ -10,7 +10,7 @@ class MemorizedLinesController < ApplicationController
       def create
         @memorized_line = MemorizedLine.create(params.require(:memorized_line).permit(:lyric_id, :user_id))
         redirect_to users_path
-    end
+      end
       
       def show
 

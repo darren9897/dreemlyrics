@@ -10,12 +10,11 @@ User.destroy_all
 MemorizedLine.destroy_all
 Lyric.destroy_all
 Song.destroy_all
-Structure.destroy_all
 
 usernames = [
     "Akil Griffiths", "Alexandra Radevich",
     "Amer Fahmy", "Anastasia Orlova",
-    "Bashir Alhanshali", "Cristian Cedacero", "Darren Koomson", "Dell Wilson", "Wendell Wilson", "Dina Deljanin", "Elisheva Elbaz", "Felix Rodriguez", "Franchell Polanco", "Greem Jellyfish", "Hannah Kofkin", "Hyojin Yoo", "Ian McKenzie", "Jack Hilscher",  "Jefferson Huisa", "Jonathan T. Dean",  "Kerry Odom", "Kevin Rodriguez",      "Leonora Squires", "Marlon Braga",
+    "Bashir Alhanshali","Cristian Cedacero","Darren Koomson","Dell Wilson","Wendell Wilson","Dina Deljanin","Elisheva Elbaz","Felix Rodriguez","Franchell Polanco","Greem Jellyfish","Hannah Kofkin","Hyojin Yoo","Ian McKenzie","Jack Hilscher","Jefferson Huisa","Jonathan T. Dean","Kerry Odom","Kevin Rodriguez","Leonora Squires","Marlon Braga",
     "Michelle Pathe", "Michelle Rios",
     "Nina Dibner", "Reinald Reynoso",
     "Senada Kadric", "Signe Knutson",
@@ -25,28 +24,6 @@ usernames = [
     usernames.each do |each_username|
         User.create([{username: each_username, password: "12345"}])
     end
-
-
-
-Structure.create([
-    {structure_type: "intro"},
-
-    {structure_type: "verse_1"},
-    {structure_type: "verse_2"},
-    {structure_type: "verse_3"},
-    {structure_type: "verse_4"},
-    {structure_type: "verse_5"},
-    {structure_type: "verse_6"},
-
-    {structure_type: "chorus_1"},
-    {structure_type: "chorus_2"},
-    {structure_type: "chorus_3"},
-    {structure_type: "chorus_4"},
-
-    {structure_type: "bridge"},
-    {structure_type: "outro"}
-])
-
 
 
 Song.create([
@@ -242,7 +219,7 @@ Lyric.create([{lines_of_lyrics: "[Verse 1].
     
     [Outro].
     And all that glitters is gold.
-    Only shooting stars break the mold.", structure_id: 1, song_id:3},
+    Only shooting stars break the mold.",song_id:3},
     {lines_of_lyrics: "[Verse 1].
         When these pillars get pulled down.
         It will be you who wears the crown.
@@ -289,7 +266,7 @@ Lyric.create([{lines_of_lyrics: "[Verse 1].
         I can't find the words to say.
         They're overdue.
         Travelled half the world to say.
-        I belong to you.", structure_id: 1, song_id:4},
+        I belong to you.",song_id:4},
     {lines_of_lyrics: "[Verse 1].
         Fly me to the moon.
         Let me play among the stars.
@@ -315,7 +292,7 @@ Lyric.create([{lines_of_lyrics: "[Verse 1].
         All I worship and adore.
         In other words, please be true.
         In other words, in other words.
-        I love you.", structure_id: 1, song_id:5},
+        I love you.",song_id:5},
     {lines_of_lyrics: "[Verse 1].
         I can't fool myself, I don't want nobody else to ever love me.
         You are my shining star, my guiding light, my love fantasy.
@@ -361,7 +338,7 @@ Lyric.create([{lines_of_lyrics: "[Verse 1].
         (Never too much, never too much, never too much).
         I just don't wanna stop.
         Oh, my love.
-        A million days in your arms is never too much.", structure_id: 1, song_id:6},
+        A million days in your arms is never too much.",song_id:6},
     {lines_of_lyrics: "[Verse 1].
         She was more like a beauty queen from a movie scene.
         I said, Don't mind, but what do you mean, I am the one.
@@ -442,7 +419,7 @@ Lyric.create([{lines_of_lyrics: "[Verse 1].
         Billie Jean is not my lover.
         Billie Jean is not my lover.
         Billie Jean is not my lover (Don't call me Billie Jean).
-        Billie Jean is not my lover...", structure_id: 1, song_id:7},
+        Billie Jean is not my lover...",song_id:7},
     {lines_of_lyrics: "[Verse 1].
         Last night I, I saw you standing.
         And I started, started pretending.
@@ -505,7 +482,7 @@ Lyric.create([{lines_of_lyrics: "[Verse 1].
         Can we talk for a minute?.
         I wanna know, I wanna know.
         I want to know your name.
-        Can we talk for a minute?.", structure_id: 1, song_id:8},
+        Can we talk for a minute?.",song_id:8},
     {lines_of_lyrics: "[Intro].
         Oh.
         Oh, oh.
@@ -584,7 +561,7 @@ Lyric.create([{lines_of_lyrics: "[Verse 1].
         And that's just how we do it (That's just how we do it).
         Yeah, that's just how we do it (That's just how we do it).
         And you could do it too, ooh, ooh.
-        Yeah, that's just how we do it.", structure_id: 1, song_id:9},
+        Yeah, that's just how we do it.",song_id:9},
     {lines_of_lyrics: "[Verse 1: Woodkid].
         Deep in the ocean, dead and cast away.
         Where innocence is burned, in flames.
@@ -611,7 +588,7 @@ Lyric.create([{lines_of_lyrics: "[Verse 1].
         This deadly burst of snow is burning my hands.
         I'm frozen to the bones, I am.
         A million miles from home, I'm walking away.
-        I can't remind your eyes, your face.", structure_id: 1, song_id:10},
+        I can't remind your eyes, your face.",song_id:10},
     {lines_of_lyrics: "[Verse 1: Nicki Minaj].
         This one is for the boys with the booming system.
         Top down, AC with the cooler system.
@@ -695,7 +672,7 @@ Lyric.create([{lines_of_lyrics: "[Verse 1].
         Yeah, that's that super bass.
         Boom, boom, boom, boom...
         Boom, badoom, boom, boom, badoom, boom, bass, he got that super bass.
-        Boom, badoom, boom, boom, badoom, boom, bass, yeah, that's that super bass.", structure_id: 1, song_id:11},
+        Boom, badoom, boom, boom, badoom, boom, bass, yeah, that's that super bass.",song_id:11},
     {lines_of_lyrics: "[Verse 1].
         If I should stay.
         I would only be in your way.
@@ -738,7 +715,7 @@ Lyric.create([{lines_of_lyrics: "[Verse 1].
         You.
         Darling, I love you.
         I'll always.
-        I'll always love you.", structure_id: 1, song_id:12},
+        I'll always love you.",song_id:12},
     {lines_of_lyrics: "[Verse 1].
         It's nine o'clock on a Saturday.
         The regular crowd shuffles in.
@@ -809,7 +786,7 @@ Lyric.create([{lines_of_lyrics: "[Verse 1].
         Sing us a song, you're the piano man.
         Sing us a song tonight.
         Well, we're all in the mood for a melody.
-        And you've got us feeling alright.", structure_id: 1, song_id:13},
+        And you've got us feeling alright.",song_id:13},
     {lines_of_lyrics: "[Intro: Drake].
         Whoa.
         Whoa.
@@ -922,7 +899,7 @@ Lyric.create([{lines_of_lyrics: "[Verse 1].
         
         [Outro: Drake].
         Take time, ain't no tellin'.
-        Oh my, ain't no tellin'.", structure_id: 1, song_id:14},
+        Oh my, ain't no tellin'.",song_id:14},
     {lines_of_lyrics: "[Intro].
         KSR.
         It's Cardi, ayy.
@@ -993,7 +970,7 @@ Lyric.create([{lines_of_lyrics: "[Verse 1].
         I don't dance now, I make money moves.
         Say I don't gotta dance, I make money move.
         If I see you and I don't speak, that means I don't f**k with you.
-        I'm a boss, you a worker, b***h, I make bloody moves.", structure_id: 1, song_id:15}        
+        I'm a boss, you a worker, b***h, I make bloody moves.",song_id:15}        
         ])
     
 
