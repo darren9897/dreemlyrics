@@ -79,19 +79,85 @@ Song.create([
 # {lines_of_lyrics: "Just Beat It, Beat It.", structure_id: 8, song_id:1}])
 
 
-Lyric.create([
-{lines_of_lyrics: "Just Beat It, Beat It, Beat It, Beat It.
-No One Wants To Be Defeated.
-Showin' How Funky Strong Is Your Fight.
-It Doesn't Matter Who's Wrong Or Right.
-Just Beat It, Beat It.
-Just Beat It, Beat It.
-Just Beat It, Beat It.
-Just Beat It, Beat It.", structure_id: 8, song_id:1}])
+# Lyric.create([
+#     {lines_of_lyrics: "They Told Him Don't You Ever Come Around Here.
+#     Don't Wanna See Your Face, You Better Disappear.
+#     The Fire's In Their Eyes And Their Words Are Really Clear.
+#     So Beat It, Just Beat It.", structure_id: 2, song_id:1},
+
+    
+#     {lines_of_lyrics: "Just Beat It, Beat It, Beat It, Beat It.
+# No One Wants To Be Defeated.
+# Showin' How Funky Strong Is Your Fight.
+# It Doesn't Matter Who's Wrong Or Right.
+# Just Beat It, Beat It.
+# Just Beat It, Beat It.
+# Just Beat It, Beat It.
+# Just Beat It, Beat It.", structure_id: 8, song_id:1},
 
 
-p "hell yeah it got seeded!!"
-    {title: "Bodak Yellow", artist: "Cardi B"}])
+# {lines_of_lyrics:
+# "You Better Run, You Better Do What You Can.
+# Don't Wanna See No Blood, Don't Be A Macho Man.
+# You Wanna Be Tough, Better Do What You Can.
+# So Beat It, But You Wanna Be Bad.", structure_id: 3, song_id:1},
+
+
+# {lines_of_lyrics: "Just Beat It, Beat It, Beat It, Beat It.
+# No One Wants To Be Defeated.
+# Showin' How Funky Strong Is Your Fight.
+# It Doesn't Matter Who's Wrong Or Right.
+# Just Beat It, Beat It.
+# Just Beat It, Beat It.
+# Just Beat It, Beat It.
+# Just Beat It, Beat It.", structure_id: 9, song_id:1},
+
+# {lines_of_lyrics: "They're Out To Get You, Better Leave While You Can.
+# Don't Wanna Be A Boy, You Wanna Be A Man.
+# You Wanna Stay Alive, Better Do What You Can.
+# So Beat It, Just Beat It.", structure_id: 4, song_id:1},
+
+# {lines_of_lyrics: "You Have To Show Them That You're Really Not Scared.
+# You're Playin' With Your Life, This Ain't No Truth Or Dare.
+# They'll Kick You, Then They Beat You,.
+# Then They'll Tell You It's Fair.
+# So Beat It, But You Wanna Be Bad.", structure_id: 5, song_id:1},
+
+# {lines_of_lyrics: "Just Beat It, Beat It, Beat It, Beat It.
+# No One Wants To Be Defeated.
+# Showin' How Funky Strong Is Your Fight.
+# It Doesn't Matter Who's Wrong Or Right.
+# Just Beat It, Beat It, Beat It, Beat It, Beat It.
+# Beat It, Beat It, Beat It, Beat It.
+# No One Wants To Be Defeated.
+# Showin' How Funky Strong Is Your Fight.
+# It Doesn't Matter Who's Wrong Or Right.", structure_id: 8, song_id:1},
+
+
+# {lines_of_lyrics: "Just Beat It, Beat It, Beat It, Beat It.
+# No One Wants To Be Defeated.
+# Showin' How Funky Strong Is Your Fight.
+# It Doesn't Matter Who's Wrong Or Right.
+# ", structure_id: 10, song_id:1},
+
+# {lines_of_lyrics: "Just Beat It, Beat It, Beat It, Beat It.
+# No One Wants To Be Defeated.
+# Showin' How Funky Strong Is Your Fight.
+# It Doesn't Matter Who's Wrong Or Who's Right.
+
+# Just Beat It, Beat It, Beat It, Beat It.
+# No One Wants To Be Defeated.
+# Showin' How Funky Strong Is Your Fight.
+# It Doesn't Matter Who's Wrong Or Right.
+
+# Just Beat It, Beat It, Beat It, Beat It.
+# No One Wants To Be Defeated.
+# Showin' How Funky Strong Is Your Fight.
+# It Doesn't Matter Who's Wrong Or Right.
+
+# Just Beat It, Beat It.
+# Beat It, Beat It, Beat It.", structure_id: 11, song_id:1}])
+
 
 
 Lyric.create([{lines_of_lyrics: "[Verse 1].
@@ -935,4 +1001,4 @@ Lyric.create([{lines_of_lyrics: "[Verse 1].
 
 
 
-    p "hell yeah it got seeded!!"
+ p "hell yeah it got seeded!!"
