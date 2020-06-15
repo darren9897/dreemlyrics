@@ -6,186 +6,28 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-# User.destroy_all
-# MemorizedLine.destroy_all
-# Lyric.destroy_all
-# Song.destroy_all
-# Structure.destroy_all
+User.destroy_all
+MemorizedLine.destroy_all
+Lyric.destroy_all
+Song.destroy_all
+Structure.destroy_all
 
-# user1 = User.create([{username: "darren9897", password: "123456"}])
-# user2 = User.create([{username: "greem", password: "pw1234"}])
-
-# l1 = Lyric.create([{lines_of_lyrics: 
-#     "They Told Him Don't You Ever Come Around Here.
-#     Don't Wanna See Your Face, You Better Disappear.
-#     The Fire's In Their Eyes And Their Words Are Really Clear.
-#     So Beat It, Just Beat It.
-#     [2nd Verse].
-#     You Better Run, You Better Do What You Can.
-#     Don't Wanna See No Blood, Don't Be A Macho Man.
-#     You Wanna Be Tough, Better Do What You Can.
-#     So Beat It, But You Wanna Be Bad.
-#     [Chorus].
-#     Just Beat It, Beat It, Beat It, Beat It.
-#     No One Wants To Be Defeated.
-#     Showin' How Funky Strong Is Your Fight.
-#     It Doesn't Matter Who's Wrong Or Right.
-#     Just Beat It, Beat It.
-#     Just Beat It, Beat It.
-#     Just Beat It, Beat It.
-#     Just Beat It, Beat It.
-#     [3rd Verse].
-#     They're Out To Get You, Better Leave While You Can.
-#     Don't Wanna Be A Boy, You Wanna Be A Man.
-#     You Wanna Stay Alive, Better Do What You Can.
-#     So Beat It, Just Beat It.
-#     [4th Verse].
-#     You Have To Show Them That You're Really Not Scared.
-#     You're Playin' With Your Life, This Ain't No Truth Or Dare.
-#     They'll Kick You, Then They Beat You,.
-#     Then They'll Tell You It's Fair.
-#     So Beat It, But You Wanna Be Bad.
-#     [Chorus].
-#     Just Beat It, Beat It, Beat It, Beat It.
-#     No One Wants To Be Defeated.
-#     Showin' How Funky Strong Is Your Fight.
-#     It Doesn't Matter Who's Wrong Or Right.
-#     [Chorus].
-#     Just Beat It, Beat It, Beat It, Beat It.
-#     No One Wants To Be Defeated.
-#     Showin' How Funky Strong Is Your Fight.
-#     It Doesn't Matter Who's Wrong Or Right.
-#     Just Beat It, Beat It, Beat It, Beat It, Beat It.
-#     [Chorus].
-#     Beat It, Beat It, Beat It, Beat It.
-#     No One Wants To Be Defeated.
-#     Showin' How Funky Strong Is Your Fight.
-#     It Doesn't Matter Who's Wrong Or Right.
-#     [Chorus].
-#     Just Beat It, Beat It, Beat It, Beat It.
-#     No One Wants To Be Defeated.
-#     Showin' How Funky Strong Is Your Fight.
-#     It Doesn't Matter Who's Wrong Or Who's Right.
-#     [Chorus].
-#     Just Beat It, Beat It, Beat It, Beat It.
-#     No One Wants To Be Defeated.
-#     Showin' How Funky Strong Is Your Fight.
-#     It Doesn't Matter Who's Wrong Or Right.
-#     [Chorus].
-#     Just Beat It, Beat It, Beat It, Beat It.
-#     No One Wants To Be Defeated.
-#     Showin' How Funky Strong Is Your Fight.
-#     It Doesn't Matter Who's Wrong Or Right.
-#     Just Beat It, Beat It.
-#     Beat It, Beat It, Beat It.", structure_id: 1, song_id:1}])
-
-# l2 = Lyric.create([{lines_of_lyrics: 
-#         "[Intro].
-#         You used to call me on my.
-#         You used to, you used to.
-#         Yeah.
-        
-#         [Chorus]
-#         You used to call me on my cell phone.
-#         Late-night when you need my .
-#         Call me on my cell phone.
-#         Late-night when you need my love.
-#         And I know when that hotline bling.
-#         That can only mean one thing.
-#         I know when that hotline bling.
-#         That can only mean one thing.
-        
-#         [Verse 1].
-#         Ever since I left the city, you.
-#         Got a reputation for yourself now.
-#         Everybody knows and I feel left out.
-#         Girl, you got me down, you got me stressed out.
-#         'Cause ever since I left the city, you.
-#         Started wearing less and goin' out more.
-#         Glasses of champagne out on the dance floor.
-#         Hangin' with some girls I've never seen before.
-        
-#         [Chorus].
-#         You used to call me on my cell phone.
-#         Late-night when you need my love.
-#         Call me on my cell phone.
-#         Late-night when you need my love.
-#         I know when that hotline bling.
-#         That can only mean one thing.
-#         I know when that hotline bling.
-#         That can only mean one thing.
-        
-#         [Verse 2].
-#         Ever since I left the city, you, you, you.
-#         You and me, we just don't get along.
-#         You make me feel like I did you wrong.
-#         Going places where you don't belong.
-#         Ever since I left the city, you.
-#         You got exactly what you asked for.
-#         Running out of pages in your passport.
-#         Hangin' with some girls I've never seen before.
-        
-#         [Chorus].
-#         You used to call me on my cell phone.
-#         Late-night when you need my love.
-#         Call me on my cell phone.
-#         Late-night when you need my love.
-#         And I know when that hotline bling.
-#         That can only mean one thing.
-#         I know when that hotline bling.
-#         That can only mean one thing.
-        
-#         [Bridge].
-#         These days, all I do is.
-#         Wonder if you're bendin' over backwards for someone else.
-#         Wonder if you're rolling up a Backwoods for someone else.
-#         Doing things I taught you, gettin' nasty for someone else.
-#         You don't need no one else.
-#         You don't need nobody else, no.
-#         Why you never alone?.
-#         Why you always touching road?.
-#         Used to always stay at home.
-#         Be a good girl, you was in the zone.
-#         Yeah, you should just be yourself.
-#         Right now, you're someone else.
-        
-#         [Chorus].
-#         You used to call me on my cell phone.
-#         Late-night when you need my love.
-#         Call me on my cell phone.
-#         Late-night when you need my love.
-#         And I know when that hotline bling.
-#         That can only mean one thing.
-#         I know when that hotline bling.
-#         That can only mean one thing.
-        
-#         [Outro].
-#         Ever since I left the city…", structure_id: 1, song_id:2}])
-
-# ml1 = MemorizedLine.create([{lyric_id:1, user_id:2}])
-
-# song1 = Song.create([{title:"Beat It", artist: "Michael Jackson"}])
-# song2 = Song.create([{title:"Hotline Bling", artist: "Drake"}])
-
-# st1 = Structure.create([{structure_type: "verse"}])
-
-# Song.create([
-#     {title: "All Star", artist: "Smash Mouth"},
-#     {title: "I Belong to You", artist: "Muse"}])
-
-
-# Song.create([
-#     {title: "Fly Me to the Moon", artist: "Frank Sinatra"},
-#     {title: "Never Too Much", artist: "Luther Vandross"},
-#     {title: "Billie Jean", artist: "Michael Jackson"},
-#     {title: "Can We Talk", artist: "Tevin Campbell"},
-#     {title: "Do It", artist: "Chloe X Halle"},
-#     {title: "Iron", artist: "Woodkid"},
-#     {title: "Super Bass", artist: "Nicki Minaj"},
-#     {title: "I Will Always Love You", artist: "Whitney Houston"},
-#     {title: "Piano Man", artist: "Billy Joel"},
-#     {title: "No Tellin", artist: "Drake"},
-#     {title: "Bodak Yellow", artist: "Cardi B"}])
+Song.create([
+    {title:"Beat It", artist: "Michael Jackson"},
+    {title:"Hotline Bling", artist: "Drake"},
+    {title: "All Star", artist: "Smash Mouth"},
+    {title: "I Belong to You", artist: "Muse"},
+    {title: "Fly Me to the Moon", artist: "Frank Sinatra"},
+    {title: "Never Too Much", artist: "Luther Vandross"},
+    {title: "Billie Jean", artist: "Michael Jackson"},
+    {title: "Can We Talk", artist: "Tevin Campbell"},
+    {title: "Do It", artist: "Chloe X Halle"},
+    {title: "Iron", artist: "Woodkid"},
+    {title: "Super Bass", artist: "Nicki Minaj"},
+    {title: "I Will Always Love You", artist: "Whitney Houston"},
+    {title: "Piano Man", artist: "Billy Joel"},
+    {title: "No Tellin", artist: "Drake"},
+    {title: "Bodak Yellow", artist: "Cardi B"}])
 
 
 Lyric.create([{lines_of_lyrics: "[Verse 1].
