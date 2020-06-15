@@ -1,0 +1,10 @@
+<h1><%= @lyrics.song.title %></h1>
+
+<div>
+
+<%@lyrics.lines_of_lyrics.split(".").each do |lines| %>
+    <p><%=lines%></p>
+<%end%>
+
+
+</div>
