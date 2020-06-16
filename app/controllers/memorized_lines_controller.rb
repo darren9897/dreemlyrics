@@ -13,7 +13,7 @@ class MemorizedLinesController < ApplicationController
       end
       
       def show
-
+        @memorized_line = MemorizedLine.find(params[:id])
       end
 
       def update

@@ -976,6 +976,6 @@ Lyric.create([{lines_of_lyrics: "[Verse 1].
 
 
 
-
+we have to add Adore by Prince for Dell 
 
  p "hell yeah it got seeded!!"
