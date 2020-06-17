@@ -1,7 +1,6 @@
 class MemorizedLinesController < ApplicationController
       before_action :check_to_see_if_someone_logged_in
 
-
       def index
         @memorized_lines = @logged_in_user.memorized_lines
       end
