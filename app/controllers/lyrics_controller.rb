@@ -6,5 +6,7 @@ class LyricsController < ApplicationController
         session[:views_remaining] = session[:views_remaining] -1
     end
 
+    
+
 
 end
