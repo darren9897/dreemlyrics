@@ -972,10 +972,5 @@ Lyric.create([{lines_of_lyrics: "[Verse 1].
         If I see you and I don't speak, that means I don't f**k with you.
         I'm a boss, you a worker, b***h, I make bloody moves.",song_id:15}        
         ])
-    
-
-
-
-
 
  p "hell yeah it got seeded!!"

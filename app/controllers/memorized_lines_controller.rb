@@ -1,19 +1,24 @@
 class MemorizedLinesController < ApplicationController
-    
+      before_action :check_to_see_if_someone_logged_in
+
+
       def index
+        @memorized_lines = @logged_in_user.memorized_lines
       end
     
       def new
           @memorized_line = MemorizedLine.new
-      end
+          @lyrics = Lyric.all
+        end
 
       def create
-        @memorized_line = MemorizedLine.create(params.require(:memorized_line).permit(:lyric_id, :user_id))
+        @memorized_line = @logged_in_user.memorized_lines.create(appointment_params_helper_method)
+          
         redirect_to users_path
       end
       
       def show
-
+        @memorized_line = MemorizedLine.find(params[:id])
       end
 
       def update
@@ -30,4 +35,11 @@ class MemorizedLinesController < ApplicationController
         @memorized_line.destory
         redirect_to users_path(@user)
     end
+
+    private
+
+    def appointment_params_helper_method
+    params.require(:memorized_lines).permit(:lyric_id, :user_id)
+    end
+
 end

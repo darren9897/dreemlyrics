@@ -6,7 +6,6 @@ class UsersController < ApplicationController
     
       def show
         @user = User.find(params[:id])
-    
       end
     
       def new
@@ -21,10 +20,39 @@ class UsersController < ApplicationController
             flash[:errors] = @user.error.full_messages
             redirect_to new_user_path
         end
-     end
+      end
+
+  #######
+      def loginform
+        @errors = flash[:errors]
+      end
     
+      def handle_login
+        @user = User.find_by(username: params[:username])
+        #byebug
+        if @user && @user.authenticate(params[:password])
+          session[:user_id] = @user.id
+          #byebug
+          redirect_to @user
+        else
+          flash[:error] = "Invalid username or password"
+          redirect_to user_login_path
+        end
+      end
+    
+    
+      def logout
+        session[:user_id] = nil
+        redirect_to user_login_path
+      end
+  
+      
       def edit
         @user = User.find(params[:id])
+
+        unless @logged_in_user.id == @user.id
+          redirect_to @logged_in_user
+        end
       end
     
       def update
