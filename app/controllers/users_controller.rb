@@ -48,9 +48,9 @@ class UsersController < ApplicationController
   
 #      byebug
       def edit
-       # @user = User.find(params[:id])
+        @user = User.find(params[:id])
         #byebug
-          unless @logged_in_user.id == @user.id
+          unless logged_in_user.id == @user.id #have to call the method from application_controller 
           #byebug
           redirect_to @logged_in_user
         end

@@ -1,8 +1,21 @@
 <h1>
 <h1 style="text-align: center; color:#00ff00
 ; font-size:46px;">DreemLyrics</h1>
-<p> What would you like to do today, <%= @user.username %>?</p>
+<p> What would you like to do today, <%= logged_in_user.username %>?</p>
 </h1>
+
+    <% if logged_in? && logged_in_user.id == @user.id %>
+
+      <%= button_to "Edit Profile", edit_user_path(@user), method: :get, class: "button" %>
+
+      <%= button_to "Delete Account", @user, method: :delete, class: "button" %>
+    <% end %>
+
+<p> Memorized Lines </p>
+<% @user.memorized_lines.each do |memorized_line| %>
+<%= memorized_line.lyric.lines_of_lyrics %>
+<br>
+<% end %>
 
 <br>
 <br>

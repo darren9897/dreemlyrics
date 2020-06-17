@@ -1,16 +1,23 @@
 <% if session[:views_remaining] > 0 %>
-    <p> page views remaining: <%= session[:views_remaining] %>
+    <p> page views remaining: <%= session[:views_remaining] %> </p>
 
-        <h1><%= @lyrics.song.title %></h1>
+        <h1><%= @lyric.song.title %> by <%= @lyric.song.artist %></h1>
+     
+            <% @lyrics.each do |lyric| %>
+                <%= link_to lyric %>
+                <% end %>
 
-        <div>
 
-        <% @lyrics.lines_of_lyrics do |lines| %>
-            <p><%= link_to lines %></p>
-        <%end%>
+
+        <button type="button"> I've memorized the whole song!</button>
+
         </div>
 
     <% else %>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/sxKF19jYk68" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/sxKF19jYk68" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    
+    </iframe>
     <%= button_to "I watched the whole ad", "/sessions/reset_views", method: :patch, class:"button" %>
+
 <% end %>
