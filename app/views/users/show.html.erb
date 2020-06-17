@@ -1,0 +1,19 @@
+<h1>
+<h1 style="text-align: center; color:#00ff00
+; font-size:46px;">DreemLyrics</h1>
+<p> What would you like to do today, <%= @user.username %>?</p>
+</h1>
+
+<br>
+<br>
+<%= button_to "View Available Songs", songs_path, method: :get %>
+<br>
+<%= button_to "Edit Account", edit_user_path, method: :get %>
+<br>
+<%= button_to "Delete Account", user_path, method: :delete %>
+<br>
+<%= button_to "Memorized Lines"%>
+
+<br>
+<br>
+

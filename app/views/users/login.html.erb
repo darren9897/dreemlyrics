@@ -1,0 +1,8 @@
+<h1>Login Form!</h1>
+
+<%= form_tag "/users/login", method: "POST" do%>
+    <%= text_field_tag :username %>
+    <%= password_field_tag :password %>
+    <%= submit_tag "Log in"%>
+<%end%>
+
