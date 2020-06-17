@@ -1,7 +1,6 @@
 class MemorizedLinesController < ApplicationController
       before_action :check_to_see_if_someone_logged_in
 
-
       def index
         @memorized_lines = @logged_in_user.memorized_lines
       end
@@ -9,7 +8,7 @@ class MemorizedLinesController < ApplicationController
       def new
           @memorized_line = MemorizedLine.new
           @lyrics = Lyric.all
-        end
+      end
 
       def create
         @memorized_line = @logged_in_user.memorized_lines.create(appointment_params_helper_method)

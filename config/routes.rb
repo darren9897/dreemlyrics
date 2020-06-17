@@ -21,6 +21,6 @@ Rails.application.routes.draw do
 
   
   patch '/cart', to:"carts#update" #cart session. not complete
-  patch "/sessions/reset_views", to: "sessions#reset_views"
+  patch "/sessions/reset_views", to: "sessions#reset_views" #advertisement video. limiting user view
 
 end

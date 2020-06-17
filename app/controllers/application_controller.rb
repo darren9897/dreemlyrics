@@ -11,6 +11,7 @@ class ApplicationController < ActionController::Base
       # will return the instance if someone is logged in
       # if session[:pet_id]
         @logged_in_user = User.find_by(id: session[:user_id])
+ #       byebug
       # end
     end
   

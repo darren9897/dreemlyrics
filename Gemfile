@@ -52,5 +52,5 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem 'activerecord-reset-pk-sequence'
-gem 'bcrypt'
+gem 'activerecord-reset-pk-sequence' #seed id start at 1
+gem 'bcrypt' #password crypt # has_secure_password in model/user.rb

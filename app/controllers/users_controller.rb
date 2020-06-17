@@ -46,11 +46,12 @@ class UsersController < ApplicationController
         redirect_to user_login_path
       end
   
-      
+#      byebug
       def edit
-        @user = User.find(params[:id])
-
-        unless @logged_in_user.id == @user.id
+       # @user = User.find(params[:id])
+        #byebug
+          unless @logged_in_user.id == @user.id
+          #byebug
           redirect_to @logged_in_user
         end
       end
