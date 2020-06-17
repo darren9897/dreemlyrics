@@ -1,13 +1,14 @@
 <% if session[:views_remaining] > 0 %>
     <p> page views remaining: <%= session[:views_remaining] %>
 
-        <h1><%= @lyrics.song.title %></h1>
+        <h1><%= @lyrics.song.title %> by <%= @lyrics.song.artist %></h1>
+            <%@lyrics.each do |lines| %>
+        <p><%=link_to lines %></p>
 
-        <div>
-
-        <%@lyrics.lines_of_lyrics.split(".").each do |lines| %>
-            <p><%=lines%></p>
         <%end%>
+
+        <button type="button"> I've memorized the whole song!</button>
+
         </div>
 
 
