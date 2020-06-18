@@ -1,26 +1,39 @@
-<h1>
-<h1 style="text-align: center; color:#00ff00
+<div class="container">
+    <h1 class="display-3" style="padding-top: 30px;"><h1 style="text-align: center; color:#00ff00
 ; font-size:46px;">DreemLyrics</h1>
+<br/>
+</div>
+
+<div class="container">
+    <h1 class="display-6">
 <p> What would you like to do today, <%= logged_in_user.username %>?</p>
-</h1>
+
 <br>
-<%= button_to "View Available Songs", songs_path, method: :get %>
+<%= button_to "View Available Songs", songs_path, method: :get %> </h1>
+
 <br>
 
+</div>
+
+<div>
+<br>
+<p>
 <% if logged_in? && logged_in_user.id == @user.id %>
 
       <%= button_to "Edit Profile", edit_user_path(@user), method: :get, class: "button" %>
       <br>
       <%= button_to "Delete Account", @user, method: :delete, class: "button" %>
     <% end %>
-
+</p>
+</div>
 <br>
+<div class="container" style="padding-top: 50px;">
 <h2>Here's what you've memorized so far!</h2>
 <% @user.memorized_lines.each do |memorized_line| %>
  <h4>Song: <%= memorized_line.lyric.song.title %></h4> <em><%= memorized_line.lyric.lines_of_lyrics %>
 <br>
 <% end %>
 
-
+</div>
 
 
