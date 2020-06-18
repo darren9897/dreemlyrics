@@ -4,7 +4,7 @@
         <h1><%= @lyric.song.title %> by <%= @lyric.song.artist %></h1>
      
             <% @lyrics.each do |lyric| %>
-                <%= link_to lyric %>
+                <h1><ul><%= link_to lyric.lines_of_lyrics, new_memorized_line_path %></ul></h1>
                 <% end %>
 
 
