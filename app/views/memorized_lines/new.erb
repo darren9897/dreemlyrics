@@ -2,10 +2,7 @@
 
 <%= form_for @memorized_line do |f|%>
     <%= f.label :lyric_id %>
-    <%= f.collection_select :lyric_id, Lyric.all, :id, :structure_id %>
-
-    <%= f.label :user_id %>
-    <%= f.collection_select :user_id, User.all, :id, :username%>
-
+    <%= f.collection_select :lyric_id, Lyric.all, :id, :lines_of_lyrics %>
     <%= f.submit%>
 <%end%>
+

@@ -1,5 +1,5 @@
 class MemorizedLinesController < ApplicationController
-      before_action :check_to_see_if_someone_logged_in
+      before_action :check_to_see_if_someones_logged_in
 
       def index
         @memorized_lines = @logged_in_user.memorized_lines
@@ -11,11 +11,12 @@ class MemorizedLinesController < ApplicationController
       end
 
       def create
-        @memorized_line = @logged_in_user.memorized_lines.create(appointment_params_helper_method)
+        # byebug
+        @memorized_line = @logged_in_user.memorized_lines.create(lyric_id: params[:memorized_line][:lyric_id], user_id:logged_in_user.id)
           
-        redirect_to users_path
-      end
+        redirect_to new_memorized_line_path
       
+      end
       def show
         @memorized_line = MemorizedLine.find(params[:id])
       end
