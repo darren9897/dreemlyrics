@@ -4,10 +4,19 @@
     <title>Dreemlyrics</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
   </head>
+
+
+
+  <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+          <a class="navbar-brand" href="/songs">Dreem Lyrics </a>
 
 
            <% if logged_in? %>
@@ -17,7 +26,24 @@
               <%= link_to "Log In", user_login_path %>
             <% end %>
 
-  <body>
+
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+
+              <li class="nav-item active">
+                <a class="nav-link" href="/songs">Songs</a>
+              </li>
+
+              <li class="nav-item">
+                  <a class="nav-link" href="/users/new">For Our New Users</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
     <%= yield %>
   </body>
 </html>

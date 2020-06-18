@@ -1,5 +1,9 @@
+<div class="container" style="padding-top: 30px;">
+    <h1 class="display-3" style="padding-top: 30px;">New User's Form</h1>
+    <br/>
 <h1> Create an account! </h1>
 
+<div class="container" style="padding-top: 30px;">
 <%= form_for @user do |f|%>
   <%= f.label :username%><br>
   <%= f.text_field :username%><br>
@@ -9,3 +13,4 @@
      
   <%= f.submit "Sign up!" %>
 <%end%>
+</div>

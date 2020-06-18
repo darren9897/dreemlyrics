@@ -1,10 +1,29 @@
-<h1> User index </h1>
+<h1 class="display-3" style="padding-top: 30px;">USER INDEX</h1>
+
+<div class="container">
+    <div class="row row-cols-2">
+
+        <div class="col">
+            <h2 style="padding: 15px;"> LYRICS~ </h2>
+     
 
 <%= button_to "Add New User", new_user_path, method: :get %>
 
-<ul> 
+<ul>  
+<div class="col"> 
+    <ul style= "list-style-type: none;">
+
     <% @users.each do |user| %>
+         <li style="padding-top: 20px;">
     <li><%= link_to user.username, user_path(user) %></li> 
     <br>
     <% end %> 
-</ul>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<div class="container" style="padding-top: 30px;">
+    <h3>New to memorizing lyrics? Add yourself to the family <%= link_to "here.", "/users/new" %></h3>
+</div>

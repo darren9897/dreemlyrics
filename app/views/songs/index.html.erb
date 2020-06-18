@@ -1,11 +1,18 @@
-<h1>ALL OUR SONGS 🎶</h1>
-
+<div class="container">
+    <h1 class="display-3" style="padding-top: 30px;"><h1 style="text-align: center; color:#00ff00
+; font-size:46px;">ALL OUR SONGS 🎶</h1>
+<br/>
+</div>
 
 <div>
 <%@songs.each do |song|%>
-
-<h3><%= song.artist%> | <%=link_to song.title, lyric_path(song.id)%></h3>
+<div class="container">
+    <h1 class="display-3" style="padding-top: 30px;"><h1 style="text-align: center; color:#00ff00
+; font-size:46px;">
+🎶
+<%= song.artist%> | <%=link_to song.title, lyric_path(song.id)%></h1>
 
 <%end%>
 
+<br/>
 </div>
